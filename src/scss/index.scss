@@ -1,3 +1,36 @@
-header {
-  background: red;
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+$background: #fcfafb;
+
+body {
+  margin: 0;
+  background: $background;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid red;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+footer {
+  border-top: 1px solid red;
 }

@@ -12,6 +12,9 @@ module.exports = {
     filename: "[name].js",
     publicPath: "/"
   },
+  devServer: {
+    historyApiFallback: true
+  },
   optimization: {
     splitChunks: {
       chunks: "all"
@@ -47,7 +50,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./public/index.html",
       filename: "./index.html"
     }),
     new CompressionPlugin(),
