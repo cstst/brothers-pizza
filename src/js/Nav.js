@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleIsOpen() {
-    setIsOpen(!isOpen);
+    window.innerWidth <= "768" && setIsOpen(!isOpen);
   }
   return (
     <Navbar color="light" light expand="md">
